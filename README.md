@@ -1,3 +1,5 @@
+<img src="Screenshot (1087).png">
+
 # DailyReport
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
