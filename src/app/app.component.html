@@ -1,0 +1,29 @@
+<div class="container mt-3">
+  <div class="row header">
+    <h1 class="col-sm-6">Daily Report</h1>
+    <div class="col-sm-6 search">
+      <i class="fa fa-search icon"></i>
+      <input class="searchinput" type="search" placeholder="Search" aria-label="Search">
+      <i class="fa fa-microphone icon"></i>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="row menu">
+    <a routerLink="/" class="col-6 text-center on" (click)="onStatus()" [ngClass]="{'on_hover':status==1}" data-target="#mymodel">Single
+      Animal</a>
+    <a routerLink="/groups" class="col-6 text-center on" (click)="anotherStatus()"
+      [ngClass]="{'on_hover':otherStatus==1}">Groups</a>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="container cat">
+  <button class="category active" (click)="testing()">All</button>
+  <button class="category" (click)="testing()">Carnivorous</button>
+  <button class="category" (click)="testing()">Mammals</button>
+</div>

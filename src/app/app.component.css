@@ -1,0 +1,82 @@
+.header{
+    margin-bottom: -10px;
+}
+
+h1{
+    font-weight: 750;
+}
+
+.search{
+    height: 35px;
+    margin: 10px;
+    display: flex;
+    flex: 1;
+    background-color: rgb(224, 223, 223);
+    border-radius: 10px;
+}
+
+.searchinput{
+    outline: none;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background-color: rgb(224, 223, 223);
+}
+
+.fa{
+    color: rgb(161, 161, 161);
+}
+
+.icon{
+    margin-top: 9px;
+}
+
+.menu{
+    margin-top: -10px!important;
+}
+
+.image{
+    display: flex;
+}
+
+.on{
+    text-decoration: none;
+    color: black;
+}
+
+.on_hover{
+    border-bottom: 2px solid tomato;
+    cursor: pointer;
+}
+
+.cat{
+    display: flex;
+    position: sticky;
+    bottom: 10px;
+}
+
+.category{
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    margin: 3px;
+    background-color: rgb(185, 184, 184);
+    margin-top: 40vh;
+}
+
+.category:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.active{
+    background-color: tomato;
+    color: white;
+}
+
+@media only screen and (min-width: 768px){
+    .on{font-size: 18px;}
+    .category{font-size: 20px;}
+
+} 

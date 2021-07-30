@@ -1,0 +1,7 @@
+<div class="container">
+    <ul *ngFor="let li of lists">
+        <li><a routerLink="{{li.link}}">{{li.name}}</a></li>
+    </ul>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,120 @@
+*{
+    color: white;
+}
+
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.loop{
+    margin: 4px;
+    margin-bottom: 10px;  
+}
+
+
+.animal:hover{
+    box-shadow: 1px 1px 10px 3px rgb(172, 170, 170);
+}
+
+.animal{
+    border-radius: 10px;
+    width: 140px;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px){
+    .loop{margin: 10px;}
+    .container{margin-top: 20px;}
+    .animal{width: 200px; height: 250px;}
+    .flex_info>p{font-size: 20px;}
+    .flex_info>.health{width: 17px; height: 17px; margin-top: 7px;}
+    .flex_info>.fas{margin-top: 7px;}
+    .info>button{width: 175px;}
+    button>.firstLine{font-size: 14px;}
+    button>.seconLine{font-size: 14px;}
+    .info>.check{width: 182px;}
+}
+
+.info{
+    position: absolute;
+    bottom: 5px;
+}
+
+
+.flex_info{
+    display: flex;
+    margin-bottom: -12px;
+}
+
+.flex_info > p{
+    font-weight: bolder;
+}
+
+.health{
+    margin: 0 9px;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.fas{
+    margin: 0 9px;
+    margin-top: 5px;
+}
+
+button{
+    background-color: transparent;
+    height: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+button p{
+    margin-top: 15px;
+}
+
+.firstLine{
+    font-weight: bolder;
+    font-size: 11px;
+}
+.seconLine{
+    margin-left: 1px;
+    font-size: 11px;
+    font-weight: 100;
+}
+
+.fa-chevron-down{
+    display: none;
+    font-size: 10px;
+}
+
+.loop:hover .fa-chevron-down{
+    display: block;
+}
+
+.loop:hover .info{
+    bottom: -2px;
+}
+
+.check{
+    display: flex;
+    border: 1px ridge white;
+    border-radius: 40px;
+    width: 120px;
+    align-items: center;
+    margin-left: 9px;
+}
+
+.fa-check{
+    border: 2px ridge white;
+    border-radius: 50%;
+    padding: 5px;
+}

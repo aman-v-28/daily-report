@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="image">
+        <div class="loop" *ngFor="let ani of animals">
+            <div class="animal" style="background-image:  linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(0,0,0,1)),url({{ani.image}});  background-position: center;background-repeat: no-repeat;
+            background-size: cover;">
+                <div class="info">
+                    <div class="flex_info">
+                        <img class="health" src="{{ani.health}}">
+                        <p>{{ani.name}}</p>
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="check">
+                        <div class="fa fa-check"></div>
+                        <button>
+                            <p class="firstLine">Food</p>
+                            <p class="seconLine">(Beef 3kg)</p>
+                        </button>
+                    </div>
+                    <div class="fa fa-chevron-down text-center" style="color: white; background-color: black;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
